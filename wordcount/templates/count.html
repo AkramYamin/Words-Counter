@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Counting result</title>
+        </head>
+
+        <body>
+            <h1 class="header">Count The Words Page</h1> <a href="{% url 'home' %}">Try it again</a>
+
+            <h1>Full Text: </h1>{{fulltext}}
+
+            <br>
+            {% for k, v in words %}
+
+            {{ k }} - {{ v }}
+            <br>
+
+            {% endfor %}
+        </body>
+
+    </html>
